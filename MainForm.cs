@@ -79,7 +79,7 @@ namespace War3LuaReplacer
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.Filter = "Warcraft 3 Map Files (*.w3x)|*.w3x";
+                openFileDialog.Filter = "Warcraft 3 Map Files (*.w3x, *.w3m)|*.w3x;*.w3m|All Files (*.*)|*.*";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     textBoxW3X.Text = openFileDialog.FileName;
